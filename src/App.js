@@ -8,10 +8,38 @@ function App() {
   }, []);
 
   const microLoansMass = [
-    { img: "/imgs/zaimer.png", link: "" },
-    { img: "/imgs/zaimer.png", link: "" },
-    { img: "/imgs/zaimer.png", link: "" },
-    { img: "/imgs/zaimer.png", link: "" },
+    {
+      img: "https://assets.plurapp.com/lgs/srochno-dengi.png",
+      link: "https://affpipe.click/tFLMzhqP",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/webzaim-logo.png",
+      link: "https://affpipe.click/P75L457H",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/webbankir-logo.jpg",
+      link: "https://affpipe.click/MDDXV43y",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/turbozaim.jpg",
+      link: "https://affpipe.click/1QkFfnNG",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/ekapusta-logo.png",
+      link: "https://affpipe.click/7BrjgwwH",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/bistrodengi-logo.png",
+      link: "https://affpipe.click/4tB8fhwF",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/lime.png",
+      link: "https://affpipe.click/YJv2HQF9",
+    },
+    {
+      img: "https://assets.plurapp.com/lgs/one_click_money.png",
+      link: "https://affpipe.click/5syJLszR",
+    },
   ];
 
   return (
@@ -27,10 +55,7 @@ function App() {
             return (
               <li className="microloans__item" key={index}>
                 <div className="microloans__item-header">
-                  <img
-                    className="microloans__item-img"
-                    src="/imgs/zaimer.png"
-                  />
+                  <img className="microloans__item-img" src={microloan.img} />
                   <div className="microloans__item_chance">
                     <div className="microloans__item_chance-wrap">
                       <p className="microloans__item_chance-title">Высокий</p>
