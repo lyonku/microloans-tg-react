@@ -3,3 +3,122 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: #fff;
+  font-family: Averta CY;
+  font-size: 14px;
+  color: #141a33;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+
+  h2 {
+    font-size: 14px;
+    font-weight: 800;
+  }
+}
+
+main {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+
+    letter-spacing: -0.95px;
+  }
+}
+
+.microloans__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.microloans__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  border-radius: 12px;
+  padding: 12px;
+  list-style-type: none;
+  border: 1px solid #f6f6f8;
+  box-shadow: 0px 16px 24px 0px #00126614;
+}
+
+.microloans__item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.microloans__item-img {
+  max-height: 36px;
+}
+
+.microloans__item_chance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.microloans__item_chance-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: right;
+}
+
+.microloans__item_chance-title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.microloans__item_chance-text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #7a7e8f;
+}
+
+.microloans__item_chance-img {
+  width: 12px;
+  height: 20px;
+}
+
+/* UI */
+
+.SolidBtn {
+  text-decoration: none;
+  border-radius: 10px;
+  background: #37c99e;
+  padding: 12px 16px;
+  color: #fff;
+  line-height: 16px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.SolidBtn:hover {
+  background: #32b991;
+}
