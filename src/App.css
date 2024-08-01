@@ -52,18 +52,19 @@ main {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding-bottom: 40px;
 }
 
 .microloans__item {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
   border-radius: 12px;
   padding: 12px;
   list-style-type: none;
   border: 1px solid #f6f6f8;
   box-shadow: 0px 16px 24px 0px #00126614;
+  background: #fff;
 }
 
 .microloans__item-header {

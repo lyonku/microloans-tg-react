@@ -16,10 +16,10 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
+      {/* <header className="header">
         <img src="/imgs/SmartMoneyLogo.png" />
         <h2>Умные деньги</h2>
-      </header>
+      </header> */}
       <main className="main">
         <h1 className="main__title">Доступные предложения</h1>
         <ul className="microloans__list">
