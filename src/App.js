@@ -1,53 +1,64 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
+import microLoansMassRU from "./microLoansMassRU.json";
+
 const tg = window.Telegram.WebApp;
 
 function App() {
-  useEffect(() => {
-    tg.ready();
-  }, []);
+  const [country, setCountry] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [microLoansMass, setMicroLoansMass] = useState(microLoansMassRU);
 
-  const microLoansMass = [
-    {
-      img: "https://assets.plurapp.com/lgs/srochno-dengi.png",
-      link: "https://affpipe.click/tFLMzhqP",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/webzaim-logo.png",
-      link: "https://affpipe.click/P75L457H",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/webbankir-logo.jpg",
-      link: "https://affpipe.click/MDDXV43y",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/turbozaim.jpg",
-      link: "https://affpipe.click/1QkFfnNG",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/ekapusta-logo.png",
-      link: "https://affpipe.click/7BrjgwwH",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/bistrodengi-logo.png",
-      link: "https://affpipe.click/4tB8fhwF",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/lime.png",
-      link: "https://affpipe.click/YJv2HQF9",
-    },
-    {
-      img: "https://assets.plurapp.com/lgs/one_click_money.png",
-      link: "https://affpipe.click/5syJLszR",
-    },
-  ];
+  // const getGeoInfo = async () => {
+  //   try {
+  //     const response = await fetch("https://ipapi.co/json/");
+  //     if (!response.ok) {
+  //       throw new Error("Network response was not ok");
+  //     }
+  //     const data = await response.json();
+  //     setCountry(data.country_code);
+  //   } catch (error) {
+  //     setError(error);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getGeoInfo();
+  //   if (country) {
+  //     console.log(country);
+
+  //     switch (country) {
+  //       case "RU":
+  //         setMicroLoansMass(microLoansMassRU);
+  //         break;
+  //       case "KZ":
+  //         setMicroLoansMass(microLoansMassKZ);
+  //         break;
+  //       case "UA":
+  //         setMicroLoansMass(microLoansMassUA);
+  //         break;
+  //       default:
+  //         setMicroLoansMass(microLoansMassRU);
+  //         break;
+  //     }
+
+  //     tg.ready();
+  //   }
+  // }, [country]);
+
+  // if (loading) {
+  //   return <div>Loading...</div>;
+  // }
+
+  // if (error) {
+  //   return <div>Error: {error.message}</div>;
+  // }
 
   return (
     <div className="App">
-      {/* <header className="header">
-        <img src="/imgs/SmartMoneyLogo.png" />
-        <h2>Умные деньги</h2>
-      </header> */}
       <main className="main">
         <h1 className="main__title">Доступные предложения</h1>
         <ul className="microloans__list">
@@ -73,7 +84,7 @@ function App() {
                   href={microloan.link}
                   className="SolidBtn microloans__item-btn"
                 >
-                  Получить займ
+                  {`Получить до ${microloan.price}`}
                 </a>
               </li>
             );
