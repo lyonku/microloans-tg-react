@@ -10,6 +10,11 @@ function App() {
   const [error, setError] = useState(null);
   const [microLoansMass, setMicroLoansMass] = useState(microLoansMassRU);
 
+  useEffect(() => {
+    tg.ready();
+    tg?.expand();
+  }, []);
+
   // const getGeoInfo = async () => {
   //   try {
   //     const response = await fetch("https://ipapi.co/json/");
