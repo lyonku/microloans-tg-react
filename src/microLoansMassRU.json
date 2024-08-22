@@ -1,17 +1,12 @@
 [
   {
-    "img": "https://assets.plurapp.com/lgs/srochno-dengi.png",
-    "link": "https://affpipe.click/tFLMzhqP",
+    "img": "https://assets.plurapp.com/lgs/lime.png",
+    "link": "https://affpipe.click/YJv2HQF9",
     "price": "100 000 ₽"
   },
   {
     "img": "https://assets.plurapp.com/lgs/webzaim-logo.png",
     "link": "https://affpipe.click/P75L457H",
-    "price": "30 000 ₽"
-  },
-  {
-    "img": "https://assets.plurapp.com/lgs/webbankir-logo.jpg",
-    "link": "https://affpipe.click/MDDXV43y",
     "price": "30 000 ₽"
   },
   {
@@ -25,14 +20,19 @@
     "price": "30 000 ₽"
   },
   {
+    "img": "https://assets.plurapp.com/lgs/srochno-dengi.png",
+    "link": "https://affpipe.click/tFLMzhqP",
+    "price": "100 000 ₽"
+  },
+  {
     "img": "https://assets.plurapp.com/lgs/bistrodengi-logo.png",
     "link": "https://affpipe.click/4tB8fhwF",
     "price": "100 000 ₽"
   },
   {
-    "img": "https://assets.plurapp.com/lgs/lime.png",
-    "link": "https://affpipe.click/YJv2HQF9",
-    "price": "100 000 ₽"
+    "img": "https://assets.plurapp.com/lgs/webbankir-logo.jpg",
+    "link": "https://affpipe.click/MDDXV43y",
+    "price": "30 000 ₽"
   },
   {
     "img": "https://assets.plurapp.com/lgs/one_click_money.png",
