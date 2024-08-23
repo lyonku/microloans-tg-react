@@ -88,6 +88,8 @@ function App() {
                 <a
                   href={microloan.link}
                   className="SolidBtn microloans__item-btn"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {`Получить до ${microloan.price}`}
                 </a>
